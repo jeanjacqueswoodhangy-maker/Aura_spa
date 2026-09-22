@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="R&eacute;servez un soin chez Aura Wellness Spa par t&eacute;l&eacute;phone ou WhatsApp."
+    />
+    <title>R&eacute;servation | Aura Wellness Spa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Navigation principale">
+      <a class="brand" href="index.html" aria-label="Aura Wellness Spa">
+        <span class="brand-mark">A</span>
+        <span>
+          <strong>Aura</strong>
+          <small>Wellness Spa</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav id="main-nav" class="main-nav">
+        <a href="soins.html">Soins</a>
+        <a href="experience.html">Exp&eacute;rience</a>
+        <a href="a-propos.html">&Agrave; propos</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="reservation.html" aria-current="page">R&eacute;servation</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="booking-section">
+        <div class="booking-copy">
+          <p class="eyebrow">R&eacute;servation</p>
+          <h1>Prenez rendez-vous</h1>
+          <p>
+            Choisissez le soin souhait&eacute;, puis envoyez votre demande sur WhatsApp. L'&eacute;quipe vous
+            r&eacute;pondra pour confirmer le jour et l'heure.
+          </p>
+          <div class="route-cta">
+            <a class="button secondary" href="tel:+50934255774">Appeler +509 3425-5774</a>
+          </div>
+        </div>
+        <form class="booking-form" action="https://wa.me/50934255774" method="get" target="_blank">
+          <label>
+            Soin souhait&eacute;
+            <select name="text" aria-label="Soin souhait&eacute;">
+              <option>Bonjour Aura Wellness Spa, je souhaite un facial profond.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite un facial anti-acn&eacute;.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite un facial anti-&acirc;ge.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite une microdermabrasion.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite une hydradermabrasion.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite un massage relaxant.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite un massage su&eacute;dois.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite un massage pierre chaude.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite un massage deep tissu.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite un soin aromatherapy.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite une mad&eacute;roth&eacute;rapie.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite un massage anti-cellulite.</option>
+              <option>Bonjour Aura Wellness Spa, je souhaite une lipocavitation.</option>
+            </select>
+          </label>
+          <label>
+            Message personnalis&eacute;
+            <textarea
+              name="custom_message"
+              rows="4"
+              placeholder="&Eacute;crivez votre propre message ici..."
+              aria-label="Message personnalis&eacute;"
+            ></textarea>
+          </label>
+          <button class="button primary full" type="submit">Envoyer sur WhatsApp</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <h2>Aura Wellness Spa</h2>
+        <p>Votre oasis de calme et de s&eacute;r&eacute;nit&eacute;.</p>
+      </div>
+      <address>
+        <a href="tel:+50934255774">+509 3425-5774</a>
+        <span>Mahotiere 75 #6</span>
+        <a href="https://www.instagram.com/aur_awellnessspa" target="_blank" rel="noreferrer">@aur_awellnessspa</a>
+        <a href="https://www.tiktok.com/@aura.wellness.spa" target="_blank" rel="noreferrer">@aura.wellness.spa</a>
+      </address>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
