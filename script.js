@@ -1,5 +1,13 @@
+/* ============================================================
+   script.js — Aura Wellness Spa
+   Navigation mobile uniquement.
+   Aucune interception du formulaire de réservation :
+   le formulaire est traité côté serveur par
+   traitement_reservation.php → confirmation.php
+   ============================================================ */
+
 const navToggle = document.querySelector(".nav-toggle");
-const mainNav = document.querySelector(".main-nav");
+const mainNav   = document.querySelector(".main-nav");
 
 if (navToggle && mainNav) {
   const closeMenu = () => {
@@ -9,7 +17,6 @@ if (navToggle && mainNav) {
 
   navToggle.addEventListener("click", (event) => {
     event.stopPropagation();
-
     const isOpen = mainNav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
@@ -30,17 +37,3 @@ if (navToggle && mainNav) {
     }
   });
 }
-
-document.querySelectorAll(".booking-form").forEach((form) => {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const suggestion = form.querySelector("select[name='text']")?.value.trim() || "";
-    const customMessage = form.querySelector("textarea[name='custom_message']")?.value.trim() || "";
-    const message = customMessage || suggestion;
-    const url = `https://wa.me/50934255774?text=${encodeURIComponent(message)}`;
-
-    window.open(url, "_blank", "noopener,noreferrer");
-  });
-});
-
